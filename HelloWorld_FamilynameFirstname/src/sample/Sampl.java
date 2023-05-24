@@ -3,7 +3,7 @@ package sample;
 public class Sampl {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		// メッセージを表示
 		System.out.println("Hello,World");
 	}
 
