@@ -31,7 +31,7 @@ public class Qes1_13 {
 		 System.out.println(charNum+stringNum+booleaNnum);
 		 System.out.println(byteNum+shortNum+intNum+longNum+floatNum+doubleNum);
 		 System.out.println(byteNum*shortNum*intNum*longNum);
-		 System.out.println(doubleNum/100);
+		 System.out.println(doubleNum/shortNum);
 		 System.out.println(byteNum-shortNum);
 		 System.out.println("");//空白
 		 
@@ -66,7 +66,7 @@ public class Qes1_13 {
 	 	double weight1 =62.2;
 	 	double bmi =weight1/((height1 /100)*(height1 /100));
 	 	
-	 	System.out.println("BMIは"+bmi+"です");
+	 	System.out.println("BMIは"+Math.round(bmi*10.0)/10.0+"です");
 	 	System.out.println("");
 	 	
 	 	//変数に再代入してコンソール出力する
@@ -75,27 +75,28 @@ public class Qes1_13 {
 	 	height =168.5;
 	 	weight =64.2;
 	 	food="オムライス";
-	 	double bmi2 =22.6;
+	 	double bmi2 =weight/((height /100)*(height /100));
+	 	
 	 	
 	 	System.out.print("はじめまして"+name+"です\n");
 	 	System.out.print("年齢は"+age+"歳です\n");
 	 	System.out.print("身長は"+height+"cmです\n");
 	 	System.out.print("体重は"+weight+"kgです\n");
 	 	System.out.print("好きな食べ物は"+food+"です\n");
-	 	System.out.print("BMIは"+bmi2+"です\n");
+	 	System.out.print("BMIは"+Math.round(bmi2*10.0)/10.0+"です\n");
 	 	System.out.print("\n");
 	 	
 	 	//数値を和算で自己代入
 	 	age = age + 24  ; 
 	 	height =height +168.5;
 	 	weight =weight +64.2;
-	 	bmi2 =11.31 ;
+	 	double bmi3 =weight/((height /100)*(height /100));
 	 	System.out.print("はじめまして"+name+"です\n");
 	 	System.out.print("年齢は"+age+"歳です\n");
 	 	System.out.print("身長は"+height+"cmです\n");
 	 	System.out.print("体重は"+weight+"kgです\n");
 	 	System.out.print("好きな食べ物は"+food+"です\n");
-	 	System.out.print("BMIは"+bmi2+"です\n");
+	 	System.out.print("BMIは"+Math.round(bmi3*100.0)/100.0+"です\n");
 	 	System.out.print("\n");
 	 	
 	 	//年齢が25歳以上ならtrue
