@@ -5,7 +5,7 @@ public class Qes4 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		//for文を使用して下記の通りに出力してください
+		// for文を使用して下記の通りに出力してください
 
 		for (int i = 1; i < 10; i++) {
 			System.out.println();
