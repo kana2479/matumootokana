@@ -7,26 +7,34 @@ public class Qes5 {
 
 		// for文を使用して下記の通りに出力してください
 
-		for (int i = 1; i < 21; i++) {
+		for (int j = 1; j < 10; j++) {
 			System.out.println();
-			for (int j = 1; j < 10; j++) {
+			for (int i = 1; i < 21; i++) {
 				int num = i * j;
-				if (i < 10 && num < 10)
-					System.out.print("0" + "0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + "0" + "0" + num
-							+ " " + "||" + " ");
-				else if (i < 10 && num < 100)
-					System.out.print("0" + "0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + "0" + num + " "
-							+ "||" + " ");
-				else if (num < 100)
+				if (num < 10)
+					System.out.print(
+							"0" + "0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + "0" + "0" + num + " "
+									+ "||" + " ");
+				else if (i == 20 && num < 99)
+					System.out.print("0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + "0" + num + " ");
+				else if (i == 20)
+					System.out.print("0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + num + " ");
+				else if (i > 9 && num < 100)
 					System.out.print(
 							"0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + "0" + num + " " + "||" + " ");
-				else
+				else if (num > 99)
 					System.out.print(
 							"0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + num + " " + "||" + " ");
+				else
+					System.out.print(
+							"0" + "0" + i + " " + "*" + " " + "0" + "0" + j + " " + "=" + " " + "0" + num + " " + "||"
+									+ " ");
 
 			}
 			System.out.println();
+
 		}
 	}
+
 
 }

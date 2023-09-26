@@ -36,18 +36,23 @@ public class Qes6 {
 			switch (appliances) {
 			case "パソコン":
 				System.out.println("パソコンの残り台数は" + numAppliances + "台です");
+				System.out.println("");
 				break;
 			case "冷蔵庫":
 				System.out.println("冷蔵庫の残り台数は" + numAppliances + "台です");
+				System.out.println("");
 				break;
 			case "扇風機":
 				System.out.println("扇風機の残り台数は" + numAppliances + "台です");
+				System.out.println("");
 				break;
 			case "洗濯機":
 				System.out.println("洗濯機の残り台数は" + numAppliances + "台です");
+				System.out.println("");
 				break;
 			case "加湿器":
 				System.out.println("加湿器の残り台数は" + numAppliances + "台です");
+				System.out.println("");
 				break;
 			case "テレビ":
 			case "ディスプレイ":
@@ -55,10 +60,12 @@ public class Qes6 {
 				System.out.println(
 						tv.equals(appliances) ? "テレビの残り台数は" + numAppliances + "台です"
 								: "ディスプレイの残り台数は" + (11 - numAppliances) + "台です");
+				System.out.println("");
 
 				break;
 			default:
-				System.out.println("『その他商品』" + "は指定の商品ではありません");
+				System.out.println("『"+data+"』"+"は指定の商品ではありません");
+				System.out.println("");
 				break;
 			}
 			scanner.close();
