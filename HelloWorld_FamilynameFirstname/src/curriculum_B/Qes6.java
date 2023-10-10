@@ -8,7 +8,7 @@ public class Qes6 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-	   /*
+		/*
 		* 入力した商品の残り台数が出力されるシステムを下記の条件で作成してください													
 		* ・拡張for文・Switch文・条件演算子を使用すること　※普通のif文は使用不可													
 		* ・Switch文内でテレビとディスプレイは続けて書くようにしてください、条件演算子で出力される値を変更してください													
@@ -19,7 +19,7 @@ public class Qes6 {
 		* ・そのほかの値が入力された場合下記を出力されるようにしてください												
 		*	『受け取った値』は指定の商品ではありません											
 		* ・残り台数は0〜11までのランダムな値が出力されるようにしてください													
-	    */
+		*/
 		// scanner起動
 		Scanner scanner = new Scanner(System.in);
 		// 変数に代入
@@ -64,7 +64,7 @@ public class Qes6 {
 
 				break;
 			default:
-				System.out.println("『"+data+"』"+"は指定の商品ではありません");
+				System.out.println("『" + data + "』" + "は指定の商品ではありません");
 				System.out.println("");
 				break;
 			}
