@@ -18,32 +18,41 @@ public class Qes1_3 {
 		 */
 		System.out.println("ユーザー名を入力してください");
 		Scanner scanner = new Scanner(System.in);
+		
 		String userName;
-
+		
 		int janken_num = 0;
-		int win_num = 0;
-
+		
+		
 		while (true) {
 
 			userName = scanner.nextLine();
-
+			
+			//・ユーザー名の文字数が10文字より大きい場合「名前を10文字以内にしてください」と出力してください
 			if (userName.length() > 10) {
 				userName = "";
 				System.out.println("名前を10文字以内にしてください");
-
+				
+            //・ユーザー名の文字数が0文字以下もしくはnullの場合「名前を入力してください」と出力してください
 			} else if (userName == null || userName.length() <= 0) {
 				System.out.println("名前を入力してください");
 				userName = "";
+				
+				//ユーザー名が半角英数字以外の場合「半角英数字のみで名前を入力してください」と出力してください
 			} else if (!userName.matches("^[0-9a-zA-Z_]+$")) {
 				System.out.println("半角英数字のみで名前を入力してください");
-
+				
+				//・ユーザー名が正常な値だった場合「ユーザー名「 入力したユーザー名 」を登録しました」と出力してください
 			} else {
+				
 				System.out.println("ユーザー名" + userName + "を登録しました");
 				break;
+				
 			}
+			scanner.close();
 		}
-		//ユーザー名が半角英数字以外の場合「半角英数字のみで名前を入力してください」と出力してください
-
+		
+		
 		/*
 		 * じゃんけんのシステムを下記の条件で作成してください
 		　　 ＊・「0はグー、1：チョキ、2：パー」とすること
@@ -107,10 +116,13 @@ public class Qes1_3 {
 						|| ((input == 1 && computer_num == 1) || ((input == 2 && computer_num == 2)))) {
 					System.out.println("DRAW あいこ もう一回しましょう！");
 					System.out.println("");
-
+					
 				}
-			}
+				
+			}	
+			
 		}
-
+		
 	}
+	
 }

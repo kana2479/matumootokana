@@ -28,7 +28,7 @@ public class Qes6 {
 		String Appliances[] = data.split("、");
 		// ランダムに数字を出す
 		Random random = new Random();
-
+		
 		// それぞれの要素を取り出す、ループを行う、判定を行う
 		for (String appliances : Appliances) {
 			int numAppliances = random.nextInt(11);
@@ -64,7 +64,7 @@ public class Qes6 {
 
 				break;
 			default:
-				System.out.println("『" + data + "』" + "は指定の商品ではありません");
+				System.out.println("『" +appliances + "』" + "は指定の商品ではありません");
 				System.out.println("");
 				break;
 			}

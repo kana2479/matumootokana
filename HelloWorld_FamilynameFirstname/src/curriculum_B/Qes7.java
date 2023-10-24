@@ -1,5 +1,6 @@
 package curriculum_B;
 
+//import java.util.Random;
 import java.util.Scanner;
 
 public class Qes7 {
@@ -14,14 +15,33 @@ public class Qes7 {
 		* ・出力例を参考にプログラミングを作成してください											
 		*/
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("生徒の人数を入力してください（2以上）:");
+		
+		//System.out.print("生徒の人数を入力してください（2以上）:");
+	
+		while (true) {
+			System.out.print("生徒の人数を入力してください（2以上）:");	
+		
+		String num = scanner.nextLine();
+	
+		if (num.isEmpty()) {
 
-		int n = scanner.nextInt();
-		int[] student = new int[n];
-
+			System.out.print("【エラー】入力できるのは「2以上」です:");
+		 System.out.println("");
+		 //continue;
+		} else {
+			int n = Integer.parseInt(num);
+			
+			
+       if (n < 2) {
+		    System.out.print("【エラー】入力できるのは「2以上」です:");
+			System.out.println("");
+			continue;
+	    }
+		
+       //int n = scanner.nextInt();
 		String[] subjects = { "英語", "数学", "理科", "社会" };
 		int[][] scores = new int[n][subjects.length];
-
+		
 		for (int i = 0; i < scores.length; i++) {
 			for (int j = 0; j < scores[i].length; j++) {
 				System.out.print((i + 1) + "人目の生徒の" + subjects[j] + "の点数:");
@@ -64,5 +84,14 @@ public class Qes7 {
 		}
 		double Ave2 = ((double) sum1 / (n * 4));
 		System.out.println("全体の平均点:" + (String.format("%.2f", Ave2) + "点です"));
+		break;
+	}
+		
 	}
 }
+
+}
+	
+
+
+
