@@ -16,8 +16,6 @@ public class Qes7 {
 		*/
 		Scanner scanner = new Scanner(System.in);
 
-		//System.out.print("生徒の人数を入力してください（2以上）:");
-
 		while (true) {
 			System.out.print("生徒の人数を入力してください（2以上）:");
 
@@ -27,7 +25,7 @@ public class Qes7 {
 
 				System.out.print("【エラー】入力できるのは「2以上」です:");
 				System.out.println("");
-				//continue;
+
 			} else {
 				int n = Integer.parseInt(num);
 
@@ -37,10 +35,10 @@ public class Qes7 {
 					continue;
 				}
 
-				//int n = scanner.nextInt();
 				String[] subjects = { "英語", "数学", "理科", "社会" };
 				int[][] scores = new int[n][subjects.length];
 
+				//生徒の成績を入力
 				for (int i = 0; i < scores.length; i++) {
 					for (int j = 0; j < scores[i].length; j++) {
 						System.out.print((i + 1) + "人目の生徒の" + subjects[j] + "の点数:");
