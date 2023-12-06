@@ -91,9 +91,7 @@ public class Curriculum_New_1_18 {
 		int[] b = getArray(5);
 		
 		//Q6
-		int[] d=b;
 		calcAverage(b);
-        
 		
 
 	}
