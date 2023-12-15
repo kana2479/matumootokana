@@ -1,7 +1,8 @@
 package curriculum_New_question;
-
 import java.util.Random;
 public class Curriculum_New_1_18 {
+
+	private static final int average = 0;
 
 	// TODO 自動生成されたメソッド・スタブ
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
@@ -38,7 +39,7 @@ public class Curriculum_New_1_18 {
 	static int[] getArray(int c) {
 		Random rand = new Random();
 		int[] arrays = new int[c];
-		for (int i = 0; i <= c; i++) {
+		for (int i = 0; i < c; i++) {
 			// 1から100のうちの乱数を作成し配列に格納
 			int b = rand.nextInt(100) + 1;
 			 arrays[i]=b;
@@ -57,15 +58,24 @@ public class Curriculum_New_1_18 {
 		double average;
 		for (int i = 0; i < d.length; i++) {
 			sum = sum + d[i];
-			System.out.println(d);
+			
 		}
 		average = (double)sum /d.length;
+		System.out.println();
 		System.out.println(average);
+		System.out.println();
 		return average;
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
-
+     static boolean isZero(double h) {
+    	 if(h>50){
+    		    return true;
+    		}else{
+    		    return false;
+    		}
+     }
+     
 	public static void main(String[] args) {
 		// 作成したメソッドをここで呼び出してください
 		//Q1
@@ -93,7 +103,14 @@ public class Curriculum_New_1_18 {
 		//Q6
 		calcAverage(b);
 		
-
+		//Q7
+		
+		isZero(average);
+        if(isZero(average)) {
+        	System.out.println("true");
+        }else {
+        	System.out.println("false");
+        }
 	}
 
 }
