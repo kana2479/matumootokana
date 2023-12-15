@@ -2,7 +2,7 @@ package curriculum_New_question;
 import java.util.Random;
 public class Curriculum_New_1_18 {
 
-	private static final int average = 0;
+	
 
 	// TODO 自動生成されたメソッド・スタブ
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
@@ -61,6 +61,7 @@ public class Curriculum_New_1_18 {
 			
 		}
 		average = (double)sum /d.length;
+		
 		System.out.println();
 		System.out.println(average);
 		System.out.println();
@@ -68,7 +69,7 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
-     static boolean isZero(double h) {
+     static  boolean isZero(double h) {
     	 if(h>50){
     		    return true;
     		}else{
@@ -101,16 +102,16 @@ public class Curriculum_New_1_18 {
 		int[] b = getArray(5);
 		
 		//Q6
-		calcAverage(b);
+		
+		double s= calcAverage(b);
 		
 		//Q7
 		
-		isZero(average);
-        if(isZero(average)) {
+       if(isZero(s)) {
         	System.out.println("true");
         }else {
-        	System.out.println("false");
-        }
+        System.out.println("false");
+	}
 	}
 
 }
