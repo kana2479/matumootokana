@@ -8,7 +8,7 @@ public class Curriculum_New_1_18 {
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
 
 	static String data(String mozi, int num) {
-		String result = mozi + "" + num;
+		String result = mozi + " " + num;
 		return result;
 
 	}
@@ -69,12 +69,13 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
-     static  boolean isZero(double h) {
-    	 if(h>50){
-    		    return true;
-    		}else{
-    		    return false;
-    		}
+     static  String isZero(double h) {
+    	 
+    	 String str =(h>50)? "true":"false";
+    	 boolean str1 = Boolean.valueOf(str  );
+    	 System.out.println(str1);
+    	 return str;
+    	 
      }
      
 	public static void main(String[] args) {
@@ -82,7 +83,8 @@ public class Curriculum_New_1_18 {
 		//Q1
 		String mozi = "Hello JavaSE";
 		int num = 11;
-		System.out.println(mozi + " " + num);
+		String h =data(mozi,num);
+		System.out.println(h);
 		System.out.println();
 		//Q2
 		int multiplication = square(2, 3);
@@ -107,11 +109,8 @@ public class Curriculum_New_1_18 {
 		
 		//Q7
 		
-       if(isZero(s)) {
-        	System.out.println("true");
-        }else {
-        System.out.println("false");
-	}
+       isZero(s);
+        	
 	}
 
 }
