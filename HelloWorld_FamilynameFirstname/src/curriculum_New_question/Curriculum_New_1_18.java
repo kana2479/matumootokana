@@ -72,7 +72,7 @@ public class Curriculum_New_1_18 {
      static  String isZero(double h) {
     	 
     	 String str =(h>50)? "true":"false";
-    	 boolean str1 = Boolean.valueOf(str  );
+    	 boolean str1 = Boolean.valueOf(str);
     	 System.out.println(str1);
     	 return str;
     	 
