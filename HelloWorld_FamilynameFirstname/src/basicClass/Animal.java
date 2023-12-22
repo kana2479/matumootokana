@@ -18,7 +18,6 @@ public class Animal {
 		Date date = new Date();
 		SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd H:m:s");
 		System.out.println(sd.format(date));
-
 	}
 
 }

@@ -16,6 +16,5 @@ public class Dog {
 	public Dog(int number) {
 		this.number = number;
 		
-		
 	}
 }
