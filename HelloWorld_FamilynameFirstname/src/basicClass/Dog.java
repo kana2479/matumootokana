@@ -7,15 +7,15 @@ public class Dog {
 	int number;
 
 	// Q3：Q1で作成した変数に「犬」を代入するコンストラクタを作成してください。
-	public Dog() {
-		dog = "犬";
-		System.out.println(dog);
+	public Dog(String dog) {
+		this.dog = dog;
+		
 	}
 
 	// Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
 	public Dog(int number) {
 		this.number = number;
-		System.out.println(this.number);
+		
 		
 	}
 }
