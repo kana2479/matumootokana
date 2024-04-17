@@ -21,22 +21,40 @@ public class Execution {
 			//String型から適した型に変換
 			double bodyWeight = Double.parseDouble(num[1]);
 			int speed = Integer.parseInt(num[2]);
-			//swith文を使って、学名をかく。
+
 			String scientificName = null;
+			// null チェック
+			if (scientificName == null) {
+				// number が null ならとりあえず空文字列を入れておっく
+				scientificName = "";
+			}
+
+			//swith文を使って、学名をかく。
 			switch (animalName) {
 			case "ライオン":
 				scientificName = "パンテラ レオ";
+				break;
+				
 			case "ゾウ":
 				scientificName = "ロキソドンタ・サイクロティス";
+				break;
+				
 			case "パンダ":
 				scientificName = "アイルロポダ・メラノレウカ";
+				break;
+				
 			case "チンパンジー":
 				scientificName = "パン・トゥログロディテス";
+				break;
+				
 			case "シマウマ":
 				scientificName = "チャップマンシマウマ";
+				break;
+				
 			case "インコ":
 				scientificName = "不明";
-
+				break;
+				
 			}
 
 			System.out.println("動物名：" + animalName);
