@@ -10,6 +10,7 @@ public class Main {
 		    System.out.println(person1.height);
 		    System.out.println();
 		    person1.print();
+		    System.out.println("合計"+Person.count+"人です");
 		  }
 		}
 

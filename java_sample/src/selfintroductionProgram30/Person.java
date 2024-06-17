@@ -7,12 +7,14 @@ public class Person {
 	public int age;
 	public double height;
 	public double weight;
+	public static int count = 0;
 		// コンストラクタを定義しインスタンスフィールドに値をセット
 		Person(String name,int age,double height,double weight){
 			this.name =name;
 			this.age=age;
 			this.height=height;
 			this.weight=weight;
+			Person.count++;
 		}
 		public double bmi() {
 			return this.weight / this.height / this.height;
