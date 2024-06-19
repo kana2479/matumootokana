@@ -36,14 +36,24 @@ public class Person {
 		return this.weight / this.height / this.height;
 	}
 
-	public void print() {
-		System.out.println("名前は" + this.firstName + "です");
-		System.out.println("年は" + this.age + "です");
+	//public void print() {
+	//	System.out.println("名前は" + this.firstName + "です");
+	//	System.out.println("年は" + this.age + "です");
 		
 
+	//}
+//public static void printCount() {
+	//	System.out.println("合計"+Person.count+"人です");
+	//}
+	// インスタンスメソッドbuyを定義
+	public void buy(Car car) {
+		car.setOwner(this.fullName());
+		System.out.println(car.getOwner()+"が購入しました");
 	}
-	public static void printCount() {
-		System.out.println("合計"+Person.count+"人です");
+	public void buy(Bicycle bicycle) {
+		bicycle.setOwner(this.fullName());
+		System.out.println(bicycle.getOwner()+"が購入しました");
 	}
+	
 
 }
